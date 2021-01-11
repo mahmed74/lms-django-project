@@ -94,7 +94,8 @@ header {
     /* float: right; */
     height: 10vh;
     /* border: 2px solid blue; */
-    background-color: #111;
+    /* background-color: #111; */
+    background-color: #0f2027;
     color: white;
 }
 
@@ -125,33 +126,17 @@ header {
     /* color: white; */
 }
 
-.card1 {
-    border: 2px solid gray;
-    border-radius: 1rem;
+
+/* inside of class css starts */
+
+.bannerclassinside {
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.card1 .cardli {
-    border-right: 2px solid gray;
-}
-
-.modalinp {
-    box-shadow: 2px solid black;
-}
-
-.modalinp:focus {
-    border: 2px solid #111 !important;
-    box-shadow: 3px 2px solid #111 !important;
-}
-
-.uploadpic {
-    /* position: absolute; */
-    position: relative;
-    /* top: 900% !important; */
-    top: 7rem;
-    right: 4rem;
-    /* left: 36%; */
-    font-size: 300%;
-    cursor: pointer;
+.announcementinput {
+    width: 100%;
+    height: 130%;
 }
 
 @media only screen and (max-width:676px) {
