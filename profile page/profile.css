@@ -154,6 +154,10 @@ header {
     cursor: pointer;
 }
 
+.userinfotext h3 {
+    font-size: 135%;
+}
+
 @media only screen and (max-width:676px) {
     /* .sidenav {
         width: 380px;
@@ -202,6 +206,6 @@ header {
         top: 6rem;
     }
     .userinfotext h3 {
-        font-size: 100%;
+        font-size: 80%;
     }
 }

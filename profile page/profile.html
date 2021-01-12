@@ -15,7 +15,7 @@
 
     <!-- modal starts -->
 
-    <!-- Modal -->
+    <!-- Modal # 01 edit profile -->
     <div class="modal fade" id="editprofile" tabindex="-1" role="dialog" aria-labelledby="editprofileTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
@@ -57,7 +57,46 @@
     </div>
 
 
-    <!-- modal ends here -->
+    <!-- modal 1 ends here -->
+    <!-- modal 2 starts here -->
+
+    <div class="modal fade" id="changeprofilepic" tabindex="-1" role="dialog" aria-labelledby="changeprofilepicTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header ">
+                    <h5 class="modal-title fs-4" id="changeprofilepicLongTitle">Update Profile Picture</h5>
+                    <button type="button" class="close btn-dark btn" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+                </div>
+                <div class="modal-body">
+
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-md-12 text-center ">
+                                <label for="fistname" style="width: 70%;">
+                                    <input type="file"  class="form-control" name="profilepic" id="profilepic">
+                            </label>
+                            </div>
+                        </div>
+
+                        <!-- <button type="submit" class="btn btn-primary">Sign in</button> -->
+
+
+
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-dark">Update</button>
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- modal 2 ends here -->
 
 
     <!-- side bar starts from here -->
@@ -109,26 +148,32 @@
                     </div>
                 </div>
                 <!-- first row ends here -->
+
                 <!--second row starts -->
                 <div class="container">
                     <div class="row d-flex align-items-center">
                         <div class="col-md-6 text-center">
                             <img src="images/userimg.jpeg" width="60%" style="border-radius: 50%;margin-left: 2rem;" alt="userimage">
-                            <span class="uploadpic"><i class="fa fa-plus-circle"  aria-hidden="true"></i></span>
+                            <input type="file" style="display: none;" id="uploadpic">
+
+                            <span class="uploadpic " data-toggle="modal" data-target="#changeprofilepic"><i class="fa fa-plus-circle "  aria-hidden="true"></i></span>
+
+                            <!-- <span class="uploadpic "><i class="fa fa-plus-circle "  aria-hidden="true"></i></span> -->
+
                         </div>
                         <div class="col-md-6 my-3 mx-auto">
-                            <div class="row mx-auto ">
+                            <div class="row mx-auto " style="color:gray">
                                 <div class="col-md-12 my-1 py-2 align-self-auto userinfotext border-bottom">
-                                    <h3>Display Name : Sample Name </h3>
+                                    <h3>Display Name : <span style="color: gray;">Sample Name</span> </h3>
                                 </div>
                                 <div class="col-md-12 my-1 py-2  userinfotext border-bottom ">
-                                    <h3>Email Address : sample@sample.com </h3>
+                                    <h3>Email Address :<span style="color: gray;"> sample@sample.com </span></h3>
                                 </div>
                                 <div class="col-md-12 my-1 py-2 userinfotext border-bottom ">
-                                    <h3>current Classes : number of classes </h3>
+                                    <h3>current Classes : <span style="color: gray;"> number of classes</span> </h3>
                                 </div>
                                 <div class="col-md-12 my-1 py-2 userinfotext border-bottom ">
-                                    <h3>Other Option : Sample Answer </h3>
+                                    <h3>Other Option : <span style="color: gray;"> Sample</span> </h3>
                                 </div>
                                 <div class="col-md-12 my-1 py-2 border-bottom ">
                                     <button class="btn btn-dark" data-toggle="modal" data-target="#editprofile">Edit Info </button>

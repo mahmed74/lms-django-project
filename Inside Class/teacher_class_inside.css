@@ -139,6 +139,14 @@ header {
     height: 130%;
 }
 
+.selectedSectionborder {
+    border-bottom: 2px solid #0f2027;
+}
+
+.switchdisplaynone {
+    display: none;
+}
+
 @media only screen and (max-width:676px) {
     /* .sidenav {
         width: 380px;

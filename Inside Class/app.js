@@ -12,3 +12,29 @@ function closeNav() {
     document.getElementById("main").style.marginLeft = "0";
     document.body.style.backgroundColor = "white";
 }
+
+
+const mainstream = document.querySelector("#mainstreamid");
+const classmembers = document.querySelector("#classmemberid")
+const announcementsection = document.querySelector(".announcementsection")
+const membersection = document.querySelector(".memberssection")
+
+
+mainstream.addEventListener("click", () => {
+    classmembers.classList.remove("selectedSectionborder");
+    mainstream.classList.add("selectedSectionborder");
+    membersection.classList.add("switchdisplaynone");
+    announcementsection.classList.remove("switchdisplaynone");
+
+});
+
+
+classmembers.addEventListener("click", () => {
+    mainstream.classList.remove("selectedSectionborder");
+    classmembers.classList.add("selectedSectionborder");
+    membersection.classList.remove("switchdisplaynone");
+    announcementsection.classList.add("switchdisplaynone")
+
+    console.log("classmember")
+
+})
