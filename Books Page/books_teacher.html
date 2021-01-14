@@ -66,6 +66,53 @@
 
     <!-- modal 1 ends here -->
 
+    <!-- modal 2 starts here (book view display) -->
+
+    <div class="modal fade" id="viewbook" tabindex="-1" role="dialog" aria-labelledby="viewbookTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header ">
+                    <h5 class="modal-title fs-4" id="viewbookLongTitle">UPLOAD BOOK</h5>
+                    <button type="button" class="close btn-dark btn" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+                </div>
+                <div class="modal-body">
+
+                    <!-- <form> -->
+
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="https://media.springernature.com/w306/springer-static/cover-hires/book/978-3-319-14240-1" width="320rem" alt="bookimg">
+                        </div>
+                        <div class="col-md-6">
+                            <h2>BookName</h2>
+                            <h4>Teacher Name</h4>
+                            <p>ClassName</p>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-dark">Upload</button>
+                </div>
+                <!-- </form> -->
+            </div>
+        </div>
+    </div>
+
+
+    <!-- modal 2 starts here (book enda display) -->
+
+
+
+
+
 
     <!-- side bar starts from here -->
     <div id="mySidenav" class="sidenav">
@@ -116,7 +163,7 @@
                 </div>
                 <!-- row1 ends here-->
                 <!-- row2 starts here  -->
-                <div class="container">
+                <div class="container ">
                     <div class="row border-bottom">
                         <div class="col-12">
                             <div>
@@ -130,70 +177,72 @@
                 </div>
 
                 <!-- row2 ends here -->
-                <!-- third row starts using bootstrap -->
+                <!-- third row starts using bootstrap (this one is prefered for better experience)  --->
                 <!-- <div class="container text-center">
-                    <div class="row d-flex justify-content-center text-center my-2">
-                        <div class="col-md-4  mx-auto  text-center">
-                            <div class="bookdata w-100 my-2 text-center      " style="width: fit-content;">
+                    <div class="row text-center my-2">
+                        <div class="col-md-4   text-center">
+                            <div class="bookdata w-100 my-2 text-center" data-toggle="modal" data-target="#viewbook" style="width: fit-content;">
                                 <a href="#"><img width="150rem" height="210rem" src="https://media.springernature.com/w306/springer-static/cover-hires/book/978-3-319-14240-1" alt="imagebook"></a>
                                 <p style="color: gray;">PythonWork Book</p>
                             </div>
                         </div>
-                        <div class="col-md-4 mx-auto  text-center">
-                            <div class="bookdata w-100 my-2     " style="width: fit-content;">
-                                <img width="150rem" height="210rem" src="https://media.springernature.com/w306/springer-static/cover-hires/book/978-3-319-14240-1" alt="imagebook">
-                                <p style="color: gray;">PythonWork Book</p>
-                            </div>
-                        </div>
-                        <div class="col-md-4 mx-auto  text-center">
-                            <div class="bookdata w-100 my-2     " style="width: fit-content;">
-                                <img width="150rem" height="210rem" src="https://media.springernature.com/w306/springer-static/cover-hires/book/978-3-319-14240-1" alt="imagebook">
-                                <p style="color: gray;">PythonWork Book</p>
-                            </div>
-                        </div>
 
+                    </div>
+
+
+
+                </div> -->
+
+                <div class="container">
+                    <div class="row py-3 d-flex align-items-center card1">
+                        <div class="col-md-2 col-sm-2 col-2 text-center cardli fw-bold ">01</div>
+                        <div class="col-md-4 col-sm-4 col-4  text-center cardli d-flex justify-content-center align-items-center"><i class="fa fa-book  bookiconfa p-1" aria-hidden="true"></i> BookName</div>
+                        <!-- <div class="col-md-2 col-sm-2 col-2 text-center cardli">Program</div> -->
+                        <!-- <div class="col-md-2 col-sm-2 col-2 text-center cardli">Section</div> -->
+                        <div class="col-md-3 col-sm-3 col-3 text-center cardli"><a href="#" class="bookicon"><i style="font-size: 2rem;" class="fa fa-eye bookiconfa" aria-hidden="true"></i></a></div>
+                        <div class="col-md-3 col-sm-3 col-3 text-center cardlilast d-flex justify-content-evenly"> <a href="#" class="bookicon"><i style="font-size: 2rem;" class="fa fa-download bookiconfa" aria-hidden="true"></i></a> </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- third row ends here -->
+
+            <span data-toggle="modal" data-target="#addbook" id="addbtn">
+                    <i class="fa fa-plus-circle"  style="font-size: 4rem;color: #0f2027;cursor: pointer;" aria-hidden="true"></i>
+                </span>
+
+            <!-- third row using flex starts -->
+            <!-- <div class="container">
+                    <div class="mainrow my-3 mx-auto" style="display: flex; flex-wrap: wrap;">
+                        <div class="book ">
+                            <a href="#"><img width="150rem" height="210rem" src="https://media.springernature.com/w306/springer-static/cover-hires/book/978-3-319-14240-1" alt="imagebook"></a>
+                            <p style="color: gray;">PythonWork Book</p>
+
+                        </div>
+                        <div class="book ">
+                            <a href="#"><img width="150rem" height="210rem" src="https://media.springernature.com/w306/springer-static/cover-hires/book/978-3-319-14240-1" alt="imagebook"></a>
+                            <p style="color: gray;">PythonWork Book</p>
+
+                        </div>
+                        <div class="book ">
+                            <a href="#"><img width="150rem" height="210rem" src="https://media.springernature.com/w306/springer-static/cover-hires/book/978-3-319-14240-1" alt="imagebook"></a>
+                            <p style="color: gray;">PythonWork Book</p>
+
+                        </div>
 
 
                     </div>
                 </div> -->
-
-                <!-- third row ends here -->
-
-                <span data-toggle="modal" data-target="#addbook" id="addbtn">
-                    <i class="fa fa-plus-circle"  style="font-size: 4rem;color: #0f2027;cursor: pointer;" aria-hidden="true"></i>
-                </span>
-
-                <!-- third row using flex starts -->
-
-                <div class="mainrow my-3" style="display: flex; justify-content: space-around;">
-                    <div class="book ">
-                        <a href="#"><img width="150rem" height="210rem" src="https://media.springernature.com/w306/springer-static/cover-hires/book/978-3-319-14240-1" alt="imagebook"></a>
-                        <p style="color: gray;">PythonWork Book</p>
-
-                    </div>
-                    <div class="book ">
-                        <a href="#"><img width="150rem" height="210rem" src="https://media.springernature.com/w306/springer-static/cover-hires/book/978-3-319-14240-1" alt="imagebook"></a>
-                        <p style="color: gray;">PythonWork Book</p>
-
-                    </div>
-                    <div class="book ">
-                        <a href="#"><img width="150rem" height="210rem" src="https://media.springernature.com/w306/springer-static/cover-hires/book/978-3-319-14240-1" alt="imagebook"></a>
-                        <p style="color: gray;">PythonWork Book</p>
-
-                    </div>
-                    <div class="book ">
-                        <a href="#"><img width="150rem" height="210rem" src="https://media.springernature.com/w306/springer-static/cover-hires/book/978-3-319-14240-1" alt="imagebook"></a>
-                        <p style="color: gray;">PythonWork Book</p>
-
-                    </div>
-
-                </div>
-
-                <!-- third row using flex ends -->
+            <!-- third row using flex ends -->
 
 
-            </div>
+
+
+
+
         </div>
+    </div>
     </div>
 
 
