@@ -22,7 +22,7 @@ li {
     top: 0;
     /* Stay at the top */
     left: 0;
-    /* background-color: #111; */
+    /* background-color: #0f2027; */
     background-color: #0f2027;
     /* Black*/
     overflow-x: hidden;
@@ -94,7 +94,7 @@ header {
     /* float: right; */
     height: 10vh;
     /* border: 2px solid blue; */
-    background-color: #111;
+    background-color: #0f2027;
     color: white;
 }
 
@@ -139,8 +139,8 @@ header {
 }
 
 .modalinp:focus {
-    border: 2px solid #111 !important;
-    box-shadow: 3px 2px solid #111 !important;
+    border: 2px solid #0f2027 !important;
+    box-shadow: 3px 2px solid #0f2027 !important;
 }
 
 .bookicon {
