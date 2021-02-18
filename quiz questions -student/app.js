@@ -12,24 +12,3 @@ function closeNav() {
     document.getElementById("main").style.marginLeft = "0";
     document.body.style.backgroundColor = "white";
 }
-
-
-const selectclass = document.querySelector("#selectclass");
-const classeslistdiv = document.querySelector(".classeslist")
-const selecticon = document.querySelector("#selecticon")
-
-selectclass.addEventListener("click", () => {
-    classeslistdiv.classList.toggle("hideclass");
-    selecticon.classList.toggle("rotateclass")
-
-
-});
-
-const form = document.getElementById("announcement_form")
-const announecment  = document.getElementById("announcement")
-
-form.addEventListener("submit",()=>{
-    if(announecment.value === ""){
-        
-    }
-})

@@ -24,12 +24,3 @@ selectclass.addEventListener("click", () => {
 
 
 });
-
-const form = document.getElementById("announcement_form")
-const announecment  = document.getElementById("announcement")
-
-form.addEventListener("submit",()=>{
-    if(announecment.value === ""){
-        
-    }
-})

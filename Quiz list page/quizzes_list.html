@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="quizzes_list.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Teacher view - Profile</title>
+</head>
+
+<body>
+
+
+    <!-- modal starts -->
+
+    <!-- Modal # 01 edit profile -->
+    <div class="modal fade" id="addbook" tabindex="-1" role="dialog" aria-labelledby="addbookTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header ">
+                    <h5 class="modal-title fs-4" id="addbookLongTitle">UPLOAD BOOK</h5>
+                    <button type="button" class="close btn-dark btn" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+                </div>
+                <div class="modal-body">
+
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-md-12 text-center ">
+                                <label for="bookname" style="width: 70%;">
+                                <input type="text" class="form-control my-2 shadow-none modalinp" id="bookname"   placeholder="Enter Book Name">
+                            </label>
+                            </div>
+                            <div class="form-group col-md-12 text-center">
+                                <label for="classname" style="width: 70%;">
+                                <input type="text" class="form-control my-2 shadow-none modalinp" id="classname" placeholder="Enter Class Name">
+                            </label>
+                            </div>
+                            <div class="form-group col-md-12 text-center">
+                                <label for="bookurl" style="width: 70%;">
+                                <input type="text" class="form-control my-2 shadow-none modalinp" id="bookurl" placeholder="Enter Book Drive URL">
+                            </label>
+                            </div>
+                        </div>
+
+                        <!-- <button type="submit" class="btn btn-primary">Sign in</button> -->
+
+
+
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-dark">Upload</button>
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- modal 1 ends here -->
+
+    <!-- modal 2 starts here (book view display) -->
+
+    <div class="modal fade" id="viewbook" tabindex="-1" role="dialog" aria-labelledby="viewbookTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header ">
+                    <h5 class="modal-title fs-4" id="viewbookLongTitle">UPLOAD BOOK</h5>
+                    <button type="button" class="close btn-dark btn" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+                </div>
+                <div class="modal-body">
+
+                    <!-- <form> -->
+
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="https://media.springernature.com/w306/springer-static/cover-hires/book/978-3-319-14240-1" width="320rem" alt="bookimg">
+                        </div>
+                        <div class="col-md-6">
+                            <h2>BookName</h2>
+                            <h4>Teacher Name</h4>
+                            <p>ClassName</p>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-dark">Upload</button>
+                </div>
+                <!-- </form> -->
+            </div>
+        </div>
+    </div>
+
+
+    <!-- modal 2 starts here (book enda display) -->
+
+
+
+
+
+
+    <!-- side bar starts from here -->
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="userimage" style="text-align: center;">
+            <img src="/images/userimg.jpeg" style="border-radius: 5rem;margin-bottom: 1rem;" width="60%" height="60%" alt="user image">
+            <h4 class="username" style="color:white;font-size: large;text-align: center;">Muhammad Ahmed</h4>
+        </div>
+        <div class="sidebar__content" style="margin: 1rem auto;">
+            <a href="#">Profile</a>
+            <a href="#">Classes</a>
+            <a href="#">Books</a>
+            <a href="#">Quiz</a>
+            <a href="#">Announcements</a>
+            <a href="#">Logout</a>
+        </div>
+    </div>
+
+
+    <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+    <div id="main">
+        <div class="notsidenav">
+
+            <header id="myheader">
+                <div class="logo">
+                    <span style="font-size:30px;cursor:pointer;margin-right: 1rem;" class="hamburgerbtn" onclick="openNav()">&#9776</span> <span onclick="openNav()" class="logopic" style="cursor: pointer;">&#9776; &nbsp; logo</span>
+                </div>
+                <div class="welcometext">
+                    Welcome to LMS
+                </div>
+                <div class="userinfo" style="border: 1px solid #0f2027;width: 10%;text-align: center;background-color: #0f2027;">
+                    <img src="/images/userimg.jpeg" style="border-radius: 5rem;" class="navimg" width="40%" height="40%" alt="user image">
+                </div>
+            </header>
+
+            <!-- focus body starts from here -->
+
+            <div class="bodysection" id="mybodysection">
+
+                <h1 class="my-4 py-2 text-center border-bottom" >Quizzes</h1>
+
+
+                <div class="swtichrow">
+                    <div class="container">
+                        <div class="row text-center border-bottom ">
+                            <div class="col-6 py-3 pendingquizswitch activequizlist">Pending Quizzes</div>
+                            <div class="col-6 py-3 attemptedquizswitch">Attempted Quizzes</div>
+                        </div>
+                    </div>
+                </div>
+                
+              <section class="pendingquizsection ">
+                    <!-- quizcard div starts -->
+                <div class="container">
+                    <div class="row my-4">
+                        <div class="col-md-8 mx-auto quizcard text-center py-4"  style="border-radius: 2rem 0 2rem 0;" >
+                           <div class="row d-flex align-items-center">
+                               <div class="col-md-6">
+                                <h3 >Quiz Name</h3>
+                                <h4>ClassName</h4>
+                                <p>Teacher Name</p>
+                            </div>
+                               <div class="col-md-6">
+                                   <!-- <button>Attempt</button> -->
+                                   <input type="button" value="Attempt" class="buttonquiz">
+                               </div>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- quizcard div ends -->
+
+
+                 <!-- quizcard div starts -->
+                 <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 mx-auto quizcard text-center py-4"  style="border-radius: 2rem 0 2rem 0;" >
+                           <div class="row d-flex align-items-center">
+                               <div class="col-md-6">
+                                <h3 >Quiz Name</h3>
+                                <h4>ClassName</h4>
+                                <p>Teacher Name</p>
+                            </div>
+                               <div class="col-md-6">
+                                   <!-- <button>Attempt</button> -->
+                                   <input type="button" value="Attempt" class="buttonquiz">
+                               </div>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- quizcard div ends -->
+
+              </section>
+
+              <!-- pending quiz section ends -->
+
+              <!-- attempted quiz section starts -->
+
+              <section class="attemptedquizsection hiddenclass">
+
+                 <!-- quizcard div starts -->
+                 <div class="container">
+                    <div class="row my-4">
+                        <div class="col-md-8 mx-auto quizcard text-center py-4"  style="border-radius: 2rem 0 2rem 0;" >
+                           <div class="row d-flex align-items-center">
+                               <div class="col-md-6">
+                                <h3 >Quiz Name</h3>
+                                <h4>ClassName</h4>
+                                <p>Teacher Name</p>
+                            </div>
+                               <div class="col-md-6">
+                                   <!-- <button>Attempt</button> -->
+                                   <input type="button" value="Attempted" disabled style="background-color: gray;" class="buttonquiz">
+                                   <p class="datetime mt-2" >2:00PM - 2:30PM</p>
+                                   <p class="datetime" >Date : 24-Mar-2020</p>
+                               </div>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- quizcard div ends -->
+
+              </section>
+
+              <!-- attempted quiz section ends -->
+
+
+            </div>
+
+        
+
+
+
+        </div>
+    </div>
+    </div>
+
+
+
+    <script src="app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>
